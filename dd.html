@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+/*	a:link {color: #FF0000}		
+      a:visited {color: #00FF00}*/	
+      a:hover {color: #FF00FF ;background-color:aquamarine;}	/* 鼠标移动到链接上 */
+  /*   a:active {color: #0000FF}	*/
+         .s>li{
+         	list-style-type: none;
+         	text-decoration: underline;
+         	  float: left;
+         	  padding: 10px;
+         }
+         .s{
+     
+         
+         }
+		</style>
+	</head>
+	<body>
+		<ul class="s">
+		<li><a onmousedown="aa()" onclick="alert(1111111111)">111111</a></li>
+		<li><a>111111</a></li>
+		<li><a>111111</a></li>
+		<li><a>111111</a></li>
+		</ul>
+		<script>
+	   var s1=document.getElementsByTagName("a")[0];
+			s1.style.color="red";
+			function aa(){
+				s1.setAttribute("style","font-size: 100px;")
+			}
+			
+			person=new Object();
+			person.name="aa";
+			person.lastname="Gates";
+            person.age=56;
+            person.eyecolor="blue";
+         document.write(person.name);
+         document.write(person)
+       son={firstname:"John",lastname:"Doe",age:50,eyecolor:"blue"};
+			 document.write(son.lastname);
+			 var x= person.age;
+			 document.write(x)
+			 var txt="";
+			 for (a in  son ) {
+			 	txt=txt+son[a];
+			 }
+			 document.write(txt)
+			 
+			
+			var a=new Array();
+			a[0]=1;
+			a[1]="sss";
+			a[2]="assdddasd";
+			a[3]=888888888888;
+			for (var i=0;i<a.length;i++) {
+				document.write(a[i]);
+			}
+			 var  sssss=  JSON.stringify(a);
+			 alert(sssss)
+			var mycars=new Array("Saab","Volvo","BMW")
+			var  sorta=new Array(1,5,7,9,2,3,4,6);
+			var mm=0;
+			for (var m=0; m<sorta.length-1;m++) {
+				for (var n=0; n<sorta.length-m-1;n++) {
+					if(sorta[n]>sorta[n+1]){
+						mm=sorta[n];
+					       sorta[n]=sorta[n+1];
+					       sorta[n+1]=mm;
+					}
+					       
+				}	
+			}
+			for (var i=0;i<sorta.length;i++) {
+				document.write(sorta[i]);
+			}
+			
+		</script>
+	</body>
+</html>

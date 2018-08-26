@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		
+		
+		<button onclick="ss()" onmousedown="ssss()"onmouseover="sm()">换色</button>
+		<script>
+		     alert("ssss");
+		  var  _div= document.createElement("div");
+		  var _p=document.createElement("p");
+		var parent=	document.getElementsByTagName("body")[0];
+		parent.appendChild(_div);
+		_div.appendChild(_p);
+		_p.innerHTML="addsaadsasds";
+		_p.setAttribute("class","ss");
+		  _p.style.color="red";
+		  
+		 var ss= function(){
+	  	   _p.style.color="green";
+
+		  }
+		 var ssss =function(){
+		  _p.setAttribute("style","font-size: 50px;");
+		 }
+		 
+		 var sm=function(){
+		 	_div.style.backgroundColor="saddlebrown";
+		 }
+		</script>
+	</body>
+</html>

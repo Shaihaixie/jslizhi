@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#yuan{
+				position: fixed;
+				margin-top: 100px;
+				margin-left: 100PX;
+				height: 150px;
+				 width: 150px;
+				border-radius: 50%;
+                left: 100px; top: 100px;
+                right: 100px;bottom: 100px;
+				background-color: aqua;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div id="yuan">
+			  <p style="padding-left: 28px;padding-top: 30px;">运动的小球</p> 
+		</div>
+	</body>
+	<script>
+		 var count=10;
+		 window.onkeydown=function a(){
+		 	var ss=document.getElementById("yuan");
+		 	if(event.keyCode==87){
+		 		ss.style.top=count+"px";
+		 		count--;
+		 	}
+		 	if(event.keyCode==68){
+		 		ss.style.right=count+"px";
+		 		count++;
+		 		
+		 	}
+		 	 if(event.keyCode==83){
+		 		ss.style.bottom=count+"px";
+		 		count++;
+		 		
+		 	}
+		 	 if(event.keyCode==65){
+		 		ss.style.left=count+"px";
+		 		count--;
+		 	}
+		 	
+		 }
+		
+	</script>
+</html>

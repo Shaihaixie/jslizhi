@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			#kuangtaio{
+				background-color: aqua; 
+				width: 400px;
+				height: 50px;
+				border-radius: 50px;
+			}
+			#bian{
+				background-color:greenyellow; 
+				height: 50px;
+				width: 0px;
+				border-radius: 50px;
+				text-align: center;
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="kuangtaio" >
+			<div id="bian" >
+				0%
+			</div>
+		</div>
+	</body>
+	<script>
+    var test=setInterval("add()",6);
+	    var  count=1;
+		function add(){
+			if (count==400) {
+     			window.clearInterval(test);
+//   			var kuang=document.getElementById("kuangtaio");
+     		
+			} else{
+				var bian=document.getElementById("bian");
+			bian.style.width=count+"px";
+			bian.innerHTML = Math.round(count/4)+"%";
+			count++;
+			}
+			
+		}
+	</script>
+</html>
